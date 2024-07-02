@@ -1,0 +1,93 @@
+.form-container {
+    background-color: #f5f5f5;
+    /* Change to your preferred color */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-side {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-side {
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-wrapper {
+    max-width: 100%;
+    padding: 2rem;
+}
+
+.text-h2 {
+    margin-bottom: 1rem;
+    color: #000;
+    text-align: center;
+    font-family: "Antic Didone";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 100% */
+    letter-spacing: 3.9px;
+    text-transform: uppercase;
+}
+
+.text-p {
+    margin-bottom: 2rem;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 272.727% */
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.rectangleform {
+    border-radius: 20px;
+    border: 1px solid #BBA698;
+    background: #E7E4E2;
+    color: #77675C;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 230.769% */
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.rectangleform:focus {
+    box-shadow: 0 0 0 0.2rem rgba(160, 82, 45, 0.25); /* Replace with your desired focus shadow color */
+    border-color: #BBA698; /* Replace with your desired focus color */
+
+}
+
+.buttonSend {
+    border-radius: 12px;
+    background: #BBA698;    border-color: #BBA698;
+
+}
+
+.buttonSend:hover,
+.buttonSend:focus,
+.buttonSend:active,
+.buttonSend.active {
+    background: #77675C;
+    border-color: #BBA698; /* Replace with your desired focus color */
+
+}
+

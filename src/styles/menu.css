@@ -1,0 +1,74 @@
+.menu{
+  width: 100%;
+}
+
+.header-row {
+  background-color: black;
+  padding: 10px 0;
+  width: 100%;
+  margin: 0 0;
+  /* Opcional: espacio alrededor del texto */
+}
+
+.header-text {
+  color: #FFF;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18.2px;
+  /* 140% */
+  letter-spacing: 3.9px;
+}
+
+.navbar-custom {
+  background-color: white !important;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: black !important;
+}
+
+.navbar-custom .nav-link:hover {
+  color: grey !important;
+  text-decoration: none;
+  border-bottom: 2px solid grey;
+  /* Esto añade la línea debajo del enlace */
+}
+
+.custom-button {
+  border-radius: 15px 0px;
+  background: #BBA698;
+  color: white;
+  padding: 0.375rem 0.75rem;
+  margin-right: 30px;
+  border: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.custom-button:hover {
+  background: #A88C7A;
+  /* O un color de tu elección para el efecto hover */
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+  /* Espacio entre los enlaces */
+}
+
+@media (max-width: 770px) {
+  .menu {
+    position: fixed;
+    z-index: 1030;
+    /* Ajusta el valor si es necesario */
+
+  }
+
+  .header-section {
+    margin-top: 180px;
+  }
+}

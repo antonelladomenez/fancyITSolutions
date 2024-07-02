@@ -1,0 +1,12 @@
+.modal-title {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    /* 72% */
+    text-transform: uppercase;
+    text-align: center;
+
+}

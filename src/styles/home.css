@@ -1,0 +1,147 @@
+.home {
+  width: 100%;
+}
+
+
+
+.home .header-section {
+  background: url('../images/Diseño-sin-título.png') no-repeat center center;
+  background-size: cover;
+  padding: 20px 50px;
+}
+
+.home .main-header-text {
+  color: #000;
+  text-align: left;
+  color: #000;
+  font-family: "Antic Didone";
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+  /* 142.857% */
+}
+
+.home .sub-text {
+  color: #646464;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  /* 166.667% */
+}
+
+.home .info-button {
+  background-color: #BBA698;
+  border: none;
+  color: white;
+  margin-top: 20px;
+  width: 95px;
+  /* Ancho fijo */
+  height: 32px;
+  /* Altura fija */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  /* Quitar el padding interno */
+  border-radius: 15px 0px;
+  /* Bordes redondeados */
+  font-size: 14px;
+  /* Ajustar tamaño de fuente si es necesario */
+}
+
+.home .info-button:hover {
+  background-color: #A88C7A;
+}
+
+.home .image-col {
+  text-align: center;
+}
+
+.home .image-computer {
+  border-radius: 120px 0px;
+}
+
+
+@keyframes moveText {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.home .services-section {
+  background: url('../images/1.png') no-repeat center center;
+  background-size: cover;
+  padding: 10px 0;
+}
+
+.home .section-title {
+  color: #000;
+  font-family: "Antic Didone";
+  font-size: 26px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.home .service-card {
+  width: 346px;
+  height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 120px 0px;
+  margin: 10px 85px;
+  position: relative;
+  background-color: #FFF;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  z-index: 1;
+  /* Asegura que el contenido de la tarjeta esté por encima del pseudo-elemento */
+}
+
+
+
+.home .service-title {
+  color: #000;
+  font-family: "Antic Didone";
+  font-size: 20px;
+  font-style: normal;
+  line-height: normal;
+  text-decoration-line: underline;
+  z-index: 1;
+  /* Asegura que el contenido de la tarjeta esté por encima del pseudo-elemento */
+}
+
+.home .service-text {
+  color: #77675C;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  /* 187.5% */
+}
+
+.home .aboutUsHome {
+  padding: 60px 120px;
+}
+
+.home p {
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18.2px;
+  /* 140% */
+}
+
+@media (max-width: 770px) {
+  .home .aboutUsHome{
+    padding: 60px 60px;
+    }
+}
