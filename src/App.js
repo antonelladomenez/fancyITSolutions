@@ -7,7 +7,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 function App() {
   return (
-    <Router basename="/">
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
