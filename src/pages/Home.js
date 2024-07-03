@@ -33,7 +33,7 @@ const Home = () => {
           >
             <div className="main-header-text">{t("main_header_text")}</div>
             <div className="sub-text">{t("sub_text")}</div>
-            <Button className="info-button mb-3">{t("services")}</Button>
+            <Button href="/services" className="info-button mb-3">{t("services")}</Button>
           </Col>
           <Col md={6} className="image-col">
             <img

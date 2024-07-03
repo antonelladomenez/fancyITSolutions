@@ -18,22 +18,23 @@ const AboutUs = () => {
         <Row className="headerGeneral d-flex justify-content-center align-items-center">
           <Row>
             <Col>
-              <h2 className="titleService">{t('who_we_are')}</h2>
+              <h2 className="titleService">{t("who_we_are")}</h2>
             </Col>
           </Row>
         </Row>
         <TextAnimation />
         <Row className="text-center aboutUsSection">
           <Col>
-            <h2 className="section-title">{t('our_journey')}</h2>
-            <p className="textAbout mx-5">
-              {t('about_us_text')}
-            </p>
-            <Button variant="outline-secondary buttonInfoAbout">
-              {t('explore_services')}
+            <h2 className="section-title">{t("our_journey")}</h2>
+            <p className="textAbout mx-5">{t("about_us_text")}</p>
+            <Button
+              href="/services"
+              variant="outline-secondary buttonInfoAbout"
+            >
+              {t("explore_services")}
             </Button>
-            <Button variant="outline-secondary buttonInfoAbout">
-              {t('contact_us')}
+            <Button href="/contact" variant="outline-secondary buttonInfoAbout">
+              {t("contact_us")}
             </Button>
           </Col>
         </Row>
@@ -46,13 +47,11 @@ const AboutUs = () => {
                 </Col>
                 <Col md={8}>
                   <Card.Body className="text-center text-sm-start">
-                    <Card.Title>{t('marlene_title')}</Card.Title>
+                    <Card.Title>{t("marlene_title")}</Card.Title>
                     <h6 className="subtitlesAboutUs text-center text-sm-start">
-                      {t('marlene_subtitle')}
+                      {t("marlene_subtitle")}
                     </h6>
-                    <Card.Text>
-                      {t('marlene_text')}
-                    </Card.Text>
+                    <Card.Text>{t("marlene_text")}</Card.Text>
                   </Card.Body>
                 </Col>
               </Row>
@@ -64,13 +63,11 @@ const AboutUs = () => {
               <Row className="no-gutters">
                 <Col md={8}>
                   <Card.Body className="text-center text-sm-start">
-                    <Card.Title>{t('antonella_title')}</Card.Title>
+                    <Card.Title>{t("antonella_title")}</Card.Title>
                     <h6 className="subtitlesAboutUs text-center text-sm-start">
-                      {t('antonella_subtitle')}
+                      {t("antonella_subtitle")}
                     </h6>
-                    <Card.Text>
-                      {t('antonella_text')}
-                    </Card.Text>
+                    <Card.Text>{t("antonella_text")}</Card.Text>
                   </Card.Body>
                 </Col>
                 <Col md={4}>
