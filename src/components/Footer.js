@@ -18,9 +18,10 @@ const Footer = () => {
           </Col>
           <Col md={4} className="footer-links">
             <ul>
-              <li><a href="/home">{t('home')}</a></li>
-              <li><a href="/about">{t('about_us')}</a></li>
+              <li><a href="/">{t('home')}</a></li>
+              <li><a href="/about-us">{t('about_us')}</a></li>
               <li><a href="/services">{t('services')}</a></li>
+              <li><a href="/contact">{t('contact_us')}</a></li>
               <li><a href="/privacy-policy">{t('privacy_policy_title')}</a></li>
             </ul>
           </Col>

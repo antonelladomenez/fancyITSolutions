@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "../styles/home.css";
-import headerImage from "../images/image1.png"; // Ajusta la ruta según la ubicación de tu archivo
+import headerImage from "../images/homepageImage.png"; // Ajusta la ruta según la ubicación de tu archivo
 import Footer from "../components/Footer";
 import MyNavbar from "../components/Menu";
 import TextAnimation from "../components/textAnimation";
