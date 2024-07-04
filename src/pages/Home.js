@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "../styles/home.css";
-import headerImage from "../images/image1.png"; // Ajusta la ruta según la ubicación de tu archivo
+import headerImage from "../images/homepageImage.png"; // Ajusta la ruta según la ubicación de tu archivo
 import Footer from "../components/Footer";
 import MyNavbar from "../components/Menu";
 import TextAnimation from "../components/textAnimation";
@@ -33,7 +33,7 @@ const Home = () => {
           >
             <div className="main-header-text">{t("main_header_text")}</div>
             <div className="sub-text">{t("sub_text")}</div>
-            <Button className="info-button mb-3">{t("services")}</Button>
+            <Button href="/services" className="info-button mb-3">{t("services")}</Button>
           </Col>
           <Col md={6} className="image-col">
             <img
