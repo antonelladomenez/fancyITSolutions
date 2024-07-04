@@ -1,6 +1,6 @@
 {
-  "short_name": "FancyIT",
-  "name": "Fancy IT Solutions",
+  "short_name": "FancyIT Solutions",
+  "name": "FancyIT Solutions",
   "icons": [
     {
       "src": "favicon.ico",
@@ -21,6 +21,5 @@
   "start_url": ".",
   "display": "browser",
   "theme_color": "#000000",
-  "background_color": "#ffffff",
-  "description": "Fancy IT Solutions - We transform ideas into innovative digital solutions."
+  "background_color": "#ffffff"
 }
