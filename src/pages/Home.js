@@ -44,10 +44,10 @@ const Home = () => {
         <Row className="header-section align-items-center">
           <Col
             md={6}
-            className="d-flex flex-column justify-content-center ml-5 animate__slideInFromCenterLeft"
+            className="d-flex flex-column justify-content-center ml-5 "
           >
-            <div className="main-header-text">{t("main_header_text")}</div>
-            <div className="sub-text">{t("sub_text")}</div>
+            <div className="main-header-text animate__slideInFromCenterLeft">{t("main_header_text")}</div>
+            <div className="sub-text animate__slideInFromCenterLeft">{t("sub_text")}</div>
             <Button href="/services" className="info-button mb-3">
               {t("services")}
             </Button>
