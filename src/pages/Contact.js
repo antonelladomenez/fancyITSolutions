@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import formPhoto from "../images/photoFormContact.png";
 import TextAnimation from "../components/textAnimation";
 import { useTranslation } from "react-i18next";
+import "animate.css";
 
 const FormComponent = () => {
   const form = useRef();
@@ -41,7 +42,7 @@ const FormComponent = () => {
       <Container fluid className="service p-0 overflow-hidden">
         <div className="headerGeneral d-flex justify-content-center align-items-center">
           <Row>
-            <Col>
+            <Col className="animate__slideInFromRight">
               <h2 className="titleService">{t("form_header")}</h2>
             </Col>
           </Row>

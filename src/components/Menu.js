@@ -5,6 +5,7 @@ import LanguageSelector from "./LanguageSelector";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/menu.css";
 import logo from "../assets/logo.svg";
+import "animate.css"; // Importar animate.css
 
 const MyNavbar = () => {
   const { t } = useTranslation();
@@ -13,9 +14,7 @@ const MyNavbar = () => {
     <div className="menu">
       <Row className="header-row">
         <Col>
-        <div className="header-text">
-            {t('smart_web_solutions')}
-          </div>
+          <div className="header-text">{t("smart_web_solutions")}</div>
         </Col>
       </Row>
       <Navbar collapseOnSelect expand="lg" className="navbar-custom">
@@ -31,7 +30,7 @@ const MyNavbar = () => {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="ms-auto align-items-center nav-links">
+            <Nav className="ms-auto align-items-center nav-links  animate__animated animate__slideInUp">
               <Nav.Link href="/">{t("home")}</Nav.Link>
               <Nav.Link href="/about-us">{t("about_us")}</Nav.Link>
               <Nav.Link href="/services">{t("services")}</Nav.Link>
@@ -39,7 +38,7 @@ const MyNavbar = () => {
                 {t("contact_us")}
               </Button>
             </Nav>
-            <Nav>
+            <Nav className=" animate__animated animate__slideInUp">
               <LanguageSelector />
             </Nav>
           </Navbar.Collapse>

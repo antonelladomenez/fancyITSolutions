@@ -21,6 +21,9 @@
   /* 140% */
   letter-spacing: 3.9px;
 }
+.animate__slideInUp {
+  --animate-duration: 1s; /* Duración de la animación */
+}
 
 .navbar-custom {
   background-color: white !important;

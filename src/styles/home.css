@@ -1,3 +1,5 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css';
+
 .home {
   width: 100%;
 }
@@ -66,6 +68,62 @@
 
 }
 
+@keyframes slideInFromCenterLeft {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromCenterRight {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Animación de deslizar hacia arriba */
+@keyframes slideInUp {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate__slideInUp {
+  animation: slideInUp 1s ease-out;
+  will-change: transform, opacity;
+  /* Sugerencia para mejorar el rendimiento */
+}
+
+.animate__slideInFromCenterLeft {
+  animation: slideInFromCenterLeft 1s ease-out;
+  will-change: transform, opacity;
+  /* Sugerencia para mejorar el rendimiento */
+
+}
+
+.animate__slideInFromCenterRight {
+  animation: slideInFromCenterRight 1s ease-out;
+  will-change: transform, opacity;
+  /* Sugerencia para mejorar el rendimiento */
+
+}
 
 @keyframes moveText {
   0% {
@@ -143,11 +201,12 @@
 }
 
 @media (max-width: 770px) {
-  .home .aboutUsHome{
+  .home .aboutUsHome {
     padding: 60px 60px;
-    }
-    .home .image-computer {
-      width: 100%;
-    
-    }
+  }
+
+  .home .image-computer {
+    width: 100%;
+
+  }
 }
