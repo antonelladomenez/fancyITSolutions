@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col, Carousel, Button } from "react-bootstrap";
 import "../styles/home.css";
-import headerImage from "../images/homepageImage.png"; // Ajusta la ruta según la ubicación de tu archivo
 import Footer from "../components/Footer";
 import MyNavbar from "../components/Menu";
 import TextAnimation from "../components/textAnimation";
@@ -9,7 +8,8 @@ import { useTranslation } from "react-i18next";
 import LanguageModal from "../components/LanguageModal";
 import "animate.css"; // Importar animate.css
 import { useInView } from "react-intersection-observer";
-
+import headerImage1 from "../images/homepageImage.png"; // Asegúrate de ajustar las rutas a tus imágenes
+import headerImage2 from "../images/fisioteam.png";
 const Home = () => {
   const { t } = useTranslation();
   const [showModal, setShowModal] = useState(false);
@@ -46,18 +46,33 @@ const Home = () => {
             md={6}
             className="d-flex flex-column justify-content-center ml-5 "
           >
-            <div className="main-header-text animate__slideInFromCenterLeft">{t("main_header_text")}</div>
-            <div className="sub-text animate__slideInFromCenterLeft">{t("sub_text")}</div>
+            <div className="main-header-text animate__slideInFromCenterLeft">
+              {t("main_header_text")}
+            </div>
+            <div className="sub-text animate__slideInFromCenterLeft">
+              {t("sub_text")}
+            </div>
             <Button href="/services" className="info-button mb-3">
               {t("services")}
             </Button>
           </Col>
           <Col md={6} className="image-col animate__slideInFromCenterRight">
-            <img
-              src={headerImage}
-              alt="Header"
-              className="img-fluid image-computer"
-            />
+            <Carousel>
+              <Carousel.Item>
+                <img
+                  className="img-fluid image-computer"
+                  src={headerImage1}
+                  alt="Header 1"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="img-fluid image-computer"
+                  src={headerImage2}
+                  alt="Header 2"
+                />
+              </Carousel.Item>
+            </Carousel>
           </Col>
         </Row>
         <TextAnimation />
