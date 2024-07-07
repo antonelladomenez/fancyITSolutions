@@ -1,0 +1,191 @@
+.aboutUs {
+    width: 100%;
+  }
+.section-title {
+    color: #000;
+    font-family: "Antic Didone";
+    font-size: 26px;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+
+}
+
+.aboutUs .horizontal-line {
+    width: 60%;
+    /* Ajusta el ancho según tus necesidades */
+    border-top: 1px solid #000;
+    /* Ajusta el grosor y color de la línea */
+}
+
+/* Asegúrate de que el div tenga margen automático en los lados para centrarlo */
+.mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.subtitlesAboutUs {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18.2px;
+    /* 140% */
+}
+
+.aboutUsSection {
+    background: url('../images/backAboutUs.png') no-repeat center center;
+    background-size: cover;
+    padding: 80px 100px;
+}
+
+.aboutUs .service-section {
+    display: flex;
+    height: 300px;
+    padding: 0 200px;
+    align-items: center;
+    gap: 61px;
+    flex-shrink: 0;
+}
+
+.textAbout {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18.2px;
+    /* 140% */
+
+}
+
+.buttonInfoAbout {
+    margin-top: 40px;
+    margin-right: 16px;
+    border-radius: 10px;
+    background: #BBA698;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-color: #BBA698;
+    text-transform: uppercase;
+
+}
+
+
+.aboutUs .card {
+    border: none;
+}
+
+.aboutUs .card-title {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 26px;
+    font-style: normal;
+    line-height: 20px;
+    /* 72% */
+    text-transform: uppercase;
+}
+
+.aboutUs .card-text {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21.6px;
+    /* 180% */
+}
+
+.aboutUs img {
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+    /* Ajusta la opacidad de la imagen */
+}
+
+@media (max-width: 770px) {
+    .aboutUsSection {
+        padding: 60px 10px;
+    }
+
+    .textAbout {
+        font-size: 18px;
+    }
+
+    .buttonInfoAbout {
+        margin-top: 10px;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .aboutUs .service-section {
+        height: 100%;
+        display: flex;
+        padding: 0 60px;
+        align-items: center;
+        gap: 61px;
+        flex-shrink: 0;
+    }
+
+
+}
+@keyframes slideInFromRight {
+    from {
+      transform: translateX(10%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .animate__slideInFromRight {
+    animation: slideInFromRight 2s ease-out;
+    will-change: transform, opacity; /* Sugerencia para mejorar el rendimiento */
+  }
+  @keyframes slideInFromCenterLeft {
+    from {
+      transform: translateX(50%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .animate__slideInFromCenterLeft {
+    animation: slideInFromCenterLeft 1s ease-out;
+    will-change: transform, opacity; /* Sugerencia para mejorar el rendimiento */
+  }
+
+  @keyframes slideInFromCenterRight {
+    from {
+      transform: translateX(-50%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .animate__slideInFromCenterRight {
+    animation: slideInFromCenterRight 1s ease-out;
+    will-change: transform, opacity; /* Sugerencia para mejorar el rendimiento */
+  }

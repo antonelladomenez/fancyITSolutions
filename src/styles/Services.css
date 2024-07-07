@@ -1,0 +1,171 @@
+.service {
+    width: 100%;
+}
+
+.headerGeneral {
+    background: url('../images/Diseño-sin-título.png') no-repeat center center;
+    background-size: cover;
+    padding: 20px 50px;
+    padding: 100px 0;
+    text-align: center;
+    height: 380px;
+
+}
+
+.headerGeneral .titleService {
+    color: #000;
+    font-family: "Antic Didone";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    /* 119.048% */
+    letter-spacing: 3.9px;
+    text-transform: uppercase;
+}
+
+.service .service-section {
+    display: flex;
+    height: 300px;
+    padding: 0 200px;
+    align-items: center;
+    gap: 61px;
+    flex-shrink: 0;
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+    /* Ajusta la opacidad de la imagen */
+}
+
+.service .buttonInfo {
+    margin-top: 10px;
+    border-radius: 10px;
+    background: #BBA698;
+    color: #FFF;
+    font-family: "Open Sans" sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-color: #BBA698;
+}
+
+.service button:hover,
+.service button:focus,
+.service button:active,
+.service button.active {
+    background: #77675C;
+    border-color: #BBA698;
+    /* Replace with your desired focus color */
+
+}
+
+.container-black {
+    background: #000;
+    width: auto;
+    height: 348px;
+}
+
+.service .textIdeas {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 100% */
+    letter-spacing: 3.9px;
+    text-transform: uppercase;
+    padding: 100px 140px;
+}
+
+.card {
+    border: none;
+}
+
+.card-title {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    /* 72% */
+    text-transform: uppercase;
+}
+
+.card-text {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21.6px;
+    /* 180% */
+}
+
+.service .horizontal-line {
+    width: 60%;
+    /* Ajusta el ancho según tus necesidades */
+    border-top: 1px solid #000;
+    /* Ajusta el grosor y color de la línea */
+}
+
+/* Asegúrate de que el div tenga margen automático en los lados para centrarlo */
+.service .mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+@media (max-width: 770px) {
+    .card .row {
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .service .service-section {
+        height: 100%;
+        display: flex;
+        padding: 0 60px;
+        align-items: center;
+        gap: 61px;
+        flex-shrink: 0;
+    }
+
+    .headerGeneral {
+        margin-top: 180px;
+    }
+
+    .service .textIdeas {
+        padding: 30px 30px;
+        font-size: 14px;
+    }
+
+}
+@keyframes slideInUp {
+  from {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate__slideInUp {
+  animation: slideInUp 1s ease-out;
+  will-change: transform, opacity; /* Sugerencia para mejorar el rendimiento */
+}

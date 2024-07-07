@@ -1,16 +1,23 @@
-MIT License
+Custom License
 
 Copyright (c) 2024 Antonella Domenez
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+All rights reserved.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), for the
+sole purpose of review and evaluation, provided that the following conditions
+are met:
+
+1. The Software may not be copied, modified, merged, published, distributed,
+   sublicensed, and/or sold without explicit written permission from the copyright
+   holder.
+2. The Software may not be used for commercial purposes without purchasing a license
+   from the copyright holder.
+3. Any distribution or publication of the Software must include this license notice
+   and the following disclaimer.
+
+DISCLAIMER:
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,

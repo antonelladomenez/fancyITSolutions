@@ -1,0 +1,48 @@
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  /* Fondo claro para mejor visibilidad */
+  padding: 10px 0;
+  /* Espacio arriba y abajo del texto */
+  position: relative;
+  border: 1px solid #000;
+  background: #FFF;
+  text-transform: uppercase;
+}
+
+.marquee {
+  display: flex;
+
+}
+
+.marquee-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 40s linear infinite;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18.2px;
+  /* 140% */
+  letter-spacing: var(--Number, 3.9px);
+}
+
+.marquee-content span {
+  margin-right: 5rem;
+  /* Espacio al final de cada oración */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
