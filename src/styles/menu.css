@@ -1,5 +1,21 @@
-.menu{
+.menu {
   width: 100%;
+}
+
+/* src/styles/fonts.css */
+@font-face {
+  font-family: 'TAN Pearl';
+  src: url('../styles/fonnts.com-tan-pearl.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.logo-title {
+  font-family: 'TAN Pearl', sans-serif;
+  color: #BBA698;
+  margin: 0 0;
+  text-transform: uppercase
+
 }
 
 .header-row {
@@ -21,8 +37,10 @@
   /* 140% */
   letter-spacing: 3.9px;
 }
+
 .animate__slideInUp {
-  --animate-duration: 1s; /* Duración de la animación */
+  --animate-duration: 1s;
+  /* Duración de la animación */
 }
 
 .navbar-custom {
@@ -67,11 +85,15 @@
   .menu {
     position: fixed;
     z-index: 1030;
+    background-color: white;
+
     /* Ajusta el valor si es necesario */
-
   }
-
+  
+ .navbar-custom{
+  margin-top: 22px;
+ }
   .header-section {
-    margin-top: 180px;
+    margin-top: 120px;
   }
 }
