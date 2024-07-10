@@ -1,0 +1,30 @@
+/* Estilos personalizados para el dropdown */
+.custom-nav-dropdown .dropdown-menu {
+    background-color: #ffffff; /* Fondo blanco */
+    border: 1px solid #ddd; /* Borde ligero */
+    position: absolute; /* Asegura que se posicione relativo al contenedor */
+    top: 100%; /* Coloca el menú justo debajo del toggle */
+    left: 0; /* Alinea el menú a la izquierda del toggle */
+    transform: translateY(0); /* Asegura que se muestre correctamente */
+    width: auto; /* Ajusta el ancho automáticamente */
+    min-width: 100px; /* Ancho mínimo para el dropdown */
+  }
+  
+  .custom-dropdown-item {
+    color: #000000 !important; /* Letras negras */
+    text-align: center; /* Centrar el texto */
+  }
+  
+  .custom-dropdown-item:hover {
+    background-color: #f8f9fa; /* Color de fondo al pasar el mouse */
+    color: #000000 !important; /* Letras negras al pasar el mouse */
+  }
+  
+  /* Asegurar que el dropdown se abra debajo en todas las pantallas */
+  @media (max-width: 576px) {
+    .custom-nav-dropdown .dropdown-menu {
+      left: 0; /* Asegura que el menú se alinee a la izquierda */
+      right: auto; /* Evita que se extienda fuera de la pantalla */
+    }
+  }
+  

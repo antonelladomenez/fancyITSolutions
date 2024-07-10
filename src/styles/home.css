@@ -58,12 +58,13 @@
 
 .home .image-col {
   text-align: center;
+  overflow: visible; /* Asegúrate de que no esté ocultando el dropdown */
+
 }
 
 .home .image-computer {
   border-radius: 120px 0px;
   width: 80%;
-
 }
 
 @keyframes slideInFromCenterLeft {

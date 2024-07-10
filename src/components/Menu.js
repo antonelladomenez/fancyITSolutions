@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import LanguageSelector from "./LanguageSelector";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/menu.css";
-import "animate.css"; // Importar animate.css
+import "animate.css";
 
 const MyNavbar = () => {
   const { t } = useTranslation();
@@ -16,7 +16,7 @@ const MyNavbar = () => {
           <div className="header-text">{t("smart_web_solutions")}</div>
         </Col>
       </Row>
-      <Navbar collapseOnSelect expand="lg" className="navbar-custom">
+      <Navbar collapseOnSelect expand="lg" className="navbar-custom py-4">
         <Container>
           <Navbar.Brand href="/">
             <div>
@@ -35,9 +35,6 @@ const MyNavbar = () => {
               <Button href="/contact" className="custom-button text-center">
                 {t("contact_us")}
               </Button>
-            </Nav>
-            <Nav className=" animate__animated animate__slideInUp">
-              <LanguageSelector />
             </Nav>
           </Navbar.Collapse>
         </Container>

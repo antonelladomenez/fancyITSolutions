@@ -37,11 +37,11 @@ const Home = () => {
   const handleClose = () => setShowModal(false);
   return (
     <>
+      <MyNavbar />
       <Container fluid className="home p-0 overflow-hidden">
-        <MyNavbar />
         <LanguageModal show={showModal} handleClose={handleClose} />
 
-        <Row className="header-section align-items-center">
+        <Row className="header-section align-items-center py-5">
           <Col
             md={6}
             className="d-flex flex-column justify-content-center ml-5 "
