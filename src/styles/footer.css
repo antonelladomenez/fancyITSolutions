@@ -7,14 +7,14 @@
 
 .footer h2 {
   font-family: "Antic Didone";
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 700;
   margin-bottom: 10px;
 }
 
 .footer p {
   font-family: "Antic Didone";
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   color: white;
 
@@ -34,7 +34,7 @@
   color: white;
   text-decoration: none;
   font-family: "Antic Didone";
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -44,14 +44,14 @@
 
 .footer-contact h3 {
   font-family: "Antic Didone";
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   margin-bottom: 10px;
 }
 
 .footer-contact p {
   font-family: "Antic Didone";
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
 
 }
@@ -60,12 +60,12 @@
   color: white;
   text-decoration: none;
   font-family: "Antic Didone";
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
 }
 
 .footer-social {
-  font-size: 24px;
+  font-size: 26px;
   margin-top: 10px;
 }
 
@@ -82,8 +82,62 @@
   width: 60%;
 }
 
+/* Estilos personalizados para el dropdown */
+.custom-nav-dropdown .dropdown-menu {
+  background-color: #ffffff;
+  /* Fondo blanco */
+  border: 1px solid #ddd;
+  /* Borde ligero */
+  position: absolute;
+  /* Asegura que se posicione relativo al contenedor */
+  top: 100%;
+  /* Coloca el menú justo debajo del toggle */
+  left: 0;
+  /* Alinea el menú a la izquierda del toggle */
+  transform: translateY(0);
+  /* Asegura que se muestre correctamente */
+  width: auto;
+  /* Ajusta el ancho automáticamente */
+  min-width: 100px;
+  /* Ancho mínimo para el dropdown */
+}
+
+.custom-dropdown-item {
+  color: #000000 !important;
+  /* Letras negras */
+  text-align: center;
+  /* Centrar el texto */
+}
+
+.custom-dropdown-item:hover {
+  background-color: #f8f9fa;
+  /* Color de fondo al pasar el mouse */
+  color: #000000 !important;
+  /* Letras negras al pasar el mouse */
+}
+
+/* Asegurar que el dropdown se abra debajo en todas las pantallas */
+@media (max-width: 576px) {
+  .custom-nav-dropdown .dropdown-menu {
+    left: 0;
+    /* Asegura que el menú se alinee a la izquierda */
+    right: auto;
+    /* Evita que se extienda fuera de la pantalla */
+  }
+
+  .footer a {
+    font-size: 20px;
+  }
+}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 767.98px) {
+
+
+  .footer p,
+  .footer a {
+    font-size: 16px;
+  }
 
   .footer-brand,
   .footer-links,
