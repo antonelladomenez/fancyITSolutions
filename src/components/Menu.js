@@ -1,7 +1,6 @@
 import React from "react";
 import { Navbar, Nav, Container, Button, Row, Col } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-import LanguageSelector from "./LanguageSelector";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/menu.css";
 import "animate.css";

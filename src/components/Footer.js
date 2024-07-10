@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "../styles/footer.css";
 import { useTranslation } from "react-i18next";
-import LanguageSelector from "./LanguageSelector";
+
 
 const Footer = () => {
   const { t } = useTranslation();
