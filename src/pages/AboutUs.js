@@ -72,8 +72,7 @@ const AboutUs = () => {
             </Button>
           </Col>
         </Row>
-        <Row className="my-5 ">
-          <Col xs={12} className="my-4 service-section">
+        <Row className="mb-4 align-items-center">          <Col xs={12} className="my-4 service-section">
             <Card>
               <Row className="no-gutters">
                 <Col
