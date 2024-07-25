@@ -31,9 +31,11 @@ const MyNavbar = () => {
               <Nav.Link href="/about-us">{t("about_us")}</Nav.Link>
               <Nav.Link href="/services">{t("services")}</Nav.Link>
               <Nav.Link href="/projects">{t("projects")}</Nav.Link>
-              <Button href="/contact" className="custom-button text-center">
-                {t("contact_us")}
-              </Button>
+              <Nav className="nav-button-link">
+                <Button href="/contact" className="custom-button mx-0">
+                  {t("contact_us")}
+                </Button>
+              </Nav>
             </Nav>
           </Navbar.Collapse>
         </Container>
