@@ -86,7 +86,7 @@ const Footer = () => {
         <div className="horizontal-line-footer my-3 mx-auto"></div>
         <Row className="justify-content-center">
           <Col md={12} className="text-center footer-copyright">
-            <p style={{ fontSize: "16px", margin: "0 0" }}>
+            <p style={{ fontSize: "14px", margin: "0 0" }}>
               {t("rights_reserved")}
             </p>
           </Col>
