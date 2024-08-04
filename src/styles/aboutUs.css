@@ -48,7 +48,6 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 1.8; /* Ajusta el valor según necesites */
-
 }
 
 .aboutUs .aboutUsCard {
@@ -68,7 +67,6 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5; /* Ajusta el valor según necesites */
-
 }
 
 .aboutUs img {
@@ -77,41 +75,56 @@
   opacity: 0.5;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 999px) {
   .aboutUsSection {
-      padding: 60px 10px;
+    padding: 60px 10px;
   }
 
   .textAbout {
-      font-size: 18px;
+    font-size: 18px;
+  }
+
+  .aboutUs-row {
+    padding: 20px;
   }
 
   .card img {
-      width: 100%;
-      height: auto;
+    width: 100%;
+    height: auto;
   }
 
   .card-body {
-      padding: 1rem;
+    padding: 1rem;
   }
 
-  .aboutUs .service-section {
-      height: auto;
-      display: flex;
-      padding: 0 60px;
-      align-items: center;
-      gap: 61px;
+  .aboutUs .aboutUs-section {
+    height: auto;
+    display: flex;
+    padding: 0 15px;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .aboutUs .horizontal-line {
+    width: 80%;
+  }
+
+  .aboutUs .aboutUsCard {
+    margin-bottom: 20px;
+  }
+  .subtitlesAboutUs{
+    text-align: center;
   }
 }
 
 @keyframes slideInFromRight {
   from {
-      transform: translateX(10%);
-      opacity: 0;
+    transform: translateX(10%);
+    opacity: 0;
   }
   to {
-      transform: translateX(0);
-      opacity: 1;
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
@@ -121,12 +134,12 @@
 
 @keyframes slideInFromCenterLeft {
   from {
-      transform: translateX(50%);
-      opacity: 0;
+    transform: translateX(50%);
+    opacity: 0;
   }
   to {
-      transform: translateX(0);
-      opacity: 1;
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
@@ -136,12 +149,12 @@
 
 @keyframes slideInFromCenterRight {
   from {
-      transform: translateX(-50%);
-      opacity: 0;
+    transform: translateX(-50%);
+    opacity: 0;
   }
   to {
-      transform: translateX(0);
-      opacity: 1;
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
@@ -161,5 +174,6 @@
   line-height: normal;
   border-color: #BBA698;
   text-transform: uppercase;
-
 }
+
+
