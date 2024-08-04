@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commute+Sans:wght@400&display=swap');
+
+.service {
+    width: 100%;
+}
+
+.headerGeneral {
+    background: url('../images/Diseño-sin-título.png') no-repeat center center;
+    background-size: cover;
+    padding: 20px 50px;
+    padding: 100px 0;
+    text-align: center;
+    height: 380px;
+}
+
+.headerGeneral .titleService {
+    color: #000;
+    font-family: "Antic Didone";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    /* 119.048% */
+    letter-spacing: 3.9px;
+    text-transform: uppercase;
+}
+
+.projects-container {
+    padding: 2rem;
+}
+
+.project-row {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.project-image {
+    width: 70% !important;
+    height: 300px !important; /* Fija la altura para asegurar el mismo tamaño */
+    object-fit: cover;
+}
+
+.project-title {
+    font-family: 'Commute Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000;
+    margin-top: 1rem;
+    letter-spacing: 2px; 
+
+}
+
+.divider {
+    border-top: 1.5px solid rgb(0, 0, 0);
+    width: 80%; 
+    margin: 0;
+}
+.project-link {
+    text-decoration: none;
+    color: inherit;
+}
+@media (max-width: 768px) {
+    .project-row {
+        flex-direction: column !important;
+    }
+
+    .project-card {
+        margin-bottom: 2rem;
+    }
+
+    /* Centrar las imágenes en pantallas pequeñas */
+    .project-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

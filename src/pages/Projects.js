@@ -1,14 +1,13 @@
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import MyNavbar from "../components/Menu";
-import "../styles/Services.css";
+import "../styles/Projects.css";
 import Footer from "../components/Footer";
 import TextAnimation from "../components/textAnimation";
 import { useTranslation } from "react-i18next";
 import { useInView } from "react-intersection-observer";
 import "animate.css";
-import ProjectCard from "../components/ProjectCard";
-import project1 from "../images/Just-Devine-Gelato-Solid-Colour-Logo.png";
+import project1 from "../images/logo Just.png";
 import project2 from "../images/fisioTeamLogo.png";
 import project3 from "../images/factoryNails.png";
 
@@ -23,16 +22,19 @@ const Projects = () => {
       link: "https://justdevinegelato.com.au/",
       image: project1,
       alt: "Just Devine",
+      title: "JUST DEVINE | WEBSITE",
     },
     {
       link: "https://www.fisioteam.kesug.com/",
       image: project2,
       alt: "FisioTeam",
+      title: "FISIOTEAM | WEBSITE",
     },
     {
       link: "https://www.factorynails.wuaze.com/",
       image: project3,
       alt: "Factory Nails",
+      title: "FACTORY NAILS | CUSTOM BRAND + WEBSITE",
     },
   ];
 
@@ -51,20 +53,44 @@ const Projects = () => {
           </Row>
         </div>
         <TextAnimation />
-        <Row className="my-sm-4 my-3">
-          <Col
-            xs={12}
-            className="my-sm-5 my-3 service-section justify-content-center align-items-center"
-          >
-            <Card>
-              <Row className="no-gutters text-center">
-                {projects.map((project, index) => (
-                  <ProjectCard key={index} project={project} />
-                ))}
-              </Row>
-            </Card>
-          </Col>
-        </Row>
+        <Container className="projects-container my-5">
+          {projects.map((project, index) => (
+            <Row
+              key={index}
+              className={`project-row my-4 ${
+                index % 2 === 1 ? "flex-row-reverse" : ""
+              }`}
+            >
+              <Col md={5}>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-link"
+                >
+                  <img
+                    src={project.image}
+                    alt={project.alt}
+                    className="project-image"
+                  />
+                </a>
+              </Col>
+              <Col md={6} className="d-flex align-items-center">
+                <div>
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                  >
+                    <h3 className="project-title">{project.title}</h3>
+                  </a>{" "}
+                  <hr className="divider" />
+                </div>
+              </Col>
+            </Row>
+          ))}
+        </Container>
       </Container>
       <Footer />
     </>

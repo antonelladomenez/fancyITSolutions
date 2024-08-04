@@ -72,8 +72,10 @@ const AboutUs = () => {
             </Button>
           </Col>
         </Row>
-        <Row className="mb-4 align-items-center">          <Col xs={12} className="my-4 service-section">
-            <Card>
+
+        <Row className="mb-4 align-items-center aboutUs-row">
+          <Col xs={12} className="my-4 aboutUs-section">
+            <Card className="aboutUsCard">
               <Row className="no-gutters">
                 <Col
                   md={4}
@@ -83,9 +85,9 @@ const AboutUs = () => {
                   <Card.Img src={team1} alt="Diseño Web" />
                 </Col>
                 <Col md={8}>
-                  <Card.Body className="text-center text-sm-start">
+                  <Card.Body className="text-center text-md-start">
                     <Card.Title>{t("marlene_title")}</Card.Title>
-                    <h6 className="subtitlesAboutUs text-center text-sm-start">
+                    <h6 className="subtitlesAboutUs">
                       {t("marlene_subtitle")}
                     </h6>
                     <Card.Text>{t("marlene_text")}</Card.Text>
@@ -94,14 +96,14 @@ const AboutUs = () => {
               </Row>
             </Card>
           </Col>
-          <div className="horizontal-line my-4 mx-auto"></div>
+          <div className="horizontal-line"></div>
           <Col xs={12} className="mb-4 service-section">
-            <Card>
+            <Card className="aboutUsCard">
               <Row className="no-gutters">
                 <Col md={8}>
-                  <Card.Body className="text-center text-sm-start">
+                  <Card.Body className="text-center text-md-start">
                     <Card.Title>{t("antonella_title")}</Card.Title>
-                    <h6 className="subtitlesAboutUs text-center text-sm-start">
+                    <h6 className="subtitlesAboutUs">
                       {t("antonella_subtitle")}
                     </h6>
                     <Card.Text>{t("antonella_text")}</Card.Text>

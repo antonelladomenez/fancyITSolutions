@@ -50,9 +50,9 @@ const Services = () => {
             </h3>
           </Col>
         </Row>
-        <Row className="my-5">
+        <Row className="my-5 align-items-center service-row">
           <Col xs={12} className="my-4 service-section">
-            <Card>
+            <Card className="service-card">
               <Row className="no-gutters">
                 <Col
                   md={4}
@@ -76,19 +76,10 @@ const Services = () => {
               </Row>
             </Card>
           </Col>
-          <div className="horizontal-line my-4 mx-auto"></div>
+          <div className="horizontal-line mx-auto"></div>
           <Col xs={12} className="mb-4 service-section">
-            <Card>
+            <Card className="service-card">
               <Row className="no-gutters">
-                <Col
-                  md={4}
-                  ref={antonellaImgRef}
-                  className={
-                    antonellaImgInView ? "animate__slideInFromCenterLeft" : ""
-                  }
-                >
-                  <Card.Img src={service2} alt="Web Development" />
-                </Col>
                 <Col md={8}>
                   <Card.Body className="text-center text-sm-start">
                     <Card.Title>{t("service_web_development")}</Card.Title>
@@ -102,13 +93,22 @@ const Services = () => {
                       {t("button_information")}
                     </Button>
                   </Card.Body>
+                </Col>{" "}
+                <Col
+                  md={4}
+                  ref={antonellaImgRef}
+                  className={
+                    antonellaImgInView ? "animate__slideInFromCenterLeft" : ""
+                  }
+                >
+                  <Card.Img src={service2} alt="Web Development" />
                 </Col>
               </Row>
             </Card>
           </Col>
-          <div className="horizontal-line my-4 mx-auto"></div>
+          <div className="horizontal-line mx-auto"></div>
           <Col xs={12} className="mb-4 service-section">
-            <Card>
+            <Card className="service-card">
               <Row className="no-gutters">
                 <Col
                   md={4}
