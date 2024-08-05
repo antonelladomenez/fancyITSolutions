@@ -104,7 +104,6 @@
     align-items: center;
     gap: 15px;
   }
-
   .aboutUs .horizontal-line {
     width: 80%;
   }
@@ -117,7 +116,6 @@
   }
   .aboutUs .card-title{
     line-height: 1.2;
-
   }
 }
 
