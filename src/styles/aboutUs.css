@@ -115,6 +115,10 @@
   .subtitlesAboutUs{
     text-align: center;
   }
+  .aboutUs .card-title{
+    line-height: 1.2;
+
+  }
 }
 
 @keyframes slideInFromRight {
