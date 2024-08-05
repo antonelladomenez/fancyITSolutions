@@ -28,7 +28,7 @@
 .aboutUsSection {
   background: url('../images/backAboutUs.png') no-repeat center center;
   background-size: cover;
-  padding: 80px 100px;
+  padding: 80px 80px;
 }
 
 .aboutUs-row {
