@@ -104,7 +104,6 @@
     align-items: center;
     gap: 15px;
   }
-
   .aboutUs .horizontal-line {
     width: 80%;
   }
@@ -114,6 +113,9 @@
   }
   .subtitlesAboutUs{
     text-align: center;
+  }
+  .aboutUs .card-title{
+    line-height: 1.2;
   }
 }
 
@@ -175,5 +177,3 @@
   border-color: #BBA698;
   text-transform: uppercase;
 }
-
-

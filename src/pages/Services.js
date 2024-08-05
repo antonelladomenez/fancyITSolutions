@@ -80,9 +80,7 @@ const Services = () => {
           <Col xs={12} className="mb-4 service-section">
             <Card className="service-card">
               <Row className="no-gutters">
-
                 <Col md={8} className="order-md-1 order-2">
-
                   <Card.Body className="text-center text-sm-start">
                     <Card.Title>{t("service_web_development")}</Card.Title>
                     <Card.Text>
@@ -102,7 +100,6 @@ const Services = () => {
                   className={`${
                     antonellaImgInView ? "animate__slideInFromCenterLeft" : ""
                   } order-md-2 order-1`}
-
                 >
                   <Card.Img src={service2} alt="Web Development" />
                 </Col>

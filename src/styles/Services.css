@@ -163,7 +163,6 @@
     .service .service-card {
         margin-bottom: 20px;
     }
-
 }
 
 @keyframes slideInUp {
@@ -171,7 +170,6 @@
         transform: translateY(20%);
         opacity: 0;
     }
-
     to {
         transform: translateY(0);
         opacity: 1;
@@ -183,5 +181,3 @@
     will-change: transform, opacity;
     /* Sugerencia para mejorar el rendimiento */
 }
-
-
